@@ -48,6 +48,10 @@
       <Private>True</Private>
     </Reference>
     <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Oracle.ManagedDataAccess, Version=4.121.2.0, Culture=neutral, PublicKeyToken=89b483f429c47342, processorArchitecture=MSIL">
+      <HintPath>..\packages\Oracle.ManagedDataAccess.12.1.24160719\lib\net40\Oracle.ManagedDataAccess.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
     <Reference Include="System.Web.DynamicData" />
     <Reference Include="System.Web.Entity" />
     <Reference Include="System.Web.ApplicationServices" />
@@ -66,19 +70,103 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="packages.config" />
+    <Content Include="AddRecipes.aspx" />
+    <Content Include="Global.asax" />
+    <Content Include="Home.aspx" />
+    <Content Include="Images\back.jpg" />
+    <Content Include="Images\banner_1.jpg" />
+    <Content Include="Images\Food-HD-Desktop.jpg" />
+    <Content Include="Images\HC-Banners-vegan-cooking.png" />
+    <Content Include="MasterStyleSheet.css" />
+    <Content Include="packages.config">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="MasterPage.Master" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
     <None Include="Web.Release.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
+    <Content Include="PageTheme.aspx" />
+    <Content Include="RecipeDetails.aspx" />
+    <Content Include="Recipes.aspx" />
+    <Content Include="SearchRecipies.aspx" />
+    <Content Include="ucIngredient.ascx" />
+    <Content Include="Web.sitemap" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Web.config" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="App_Code\Recipe.cs" />
+    <Compile Include="App_Code\Ingredient.cs" />
+    <Compile Include="App_Code\RecipeRepository.cs" />
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="PageTheme.aspx.cs">
+      <DependentUpon>PageTheme.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PageTheme.aspx.designer.cs">
+      <DependentUpon>PageTheme.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="RecipeDetails.aspx.cs">
+      <DependentUpon>RecipeDetails.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="RecipeDetails.aspx.designer.cs">
+      <DependentUpon>RecipeDetails.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Recipes.aspx.cs">
+      <DependentUpon>Recipes.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Recipes.aspx.designer.cs">
+      <DependentUpon>Recipes.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SearchRecipies.aspx.cs">
+      <DependentUpon>SearchRecipies.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SearchRecipies.aspx.designer.cs">
+      <DependentUpon>SearchRecipies.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ucIngredient.ascx.cs">
+      <DependentUpon>ucIngredient.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ucIngredient.ascx.designer.cs">
+      <DependentUpon>ucIngredient.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="AddRecipes.aspx.cs">
+      <DependentUpon>AddRecipes.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AddRecipes.aspx.designer.cs">
+      <DependentUpon>AddRecipes.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Home.aspx.cs">
+      <DependentUpon>Home.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Home.aspx.designer.cs">
+      <DependentUpon>Home.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MasterPage.Master.cs">
+      <DependentUpon>MasterPage.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MasterPage.Master.designer.cs">
+      <DependentUpon>MasterPage.Master</DependentUpon>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Themes\" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

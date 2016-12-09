@@ -1,0 +1,49 @@
+﻿.HeadingDiv {
+    margin-left:30px auto;
+    margin-top:23px;
+    position:absolute;
+    height: 83px;
+    top: 13px;
+    left: 664px;
+    width: 298px;
+    font-family:'Brush Script MT';
+    font-size:xx-large;
+    height: 58px;
+    margin-top: 34px;
+    }
+
+h1 h2 {
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+h1 {
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    
+}
+.menu {
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin-left:7%;
+}
+
+.bannerImage {
+border-radius:20px;
+}
+#pageSetup {
+    
+	padding: 10px;
+}
+
+#pageBackgound {
+    width: 975px;
+	margin-right: auto;
+	margin-left: auto;
+    background-color:green;
+background-image:url(~/Images/back.jpg);
+}
+
+
+
+
+p {
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    height: 20px;
+}
