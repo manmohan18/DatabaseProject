@@ -72,7 +72,7 @@
   <ItemGroup>
     <Content Include="AddRecipes.aspx" />
     <Content Include="Global.asax" />
-    <Content Include="Home.aspx" />
+    <Content Include="Default.aspx" />
     <Content Include="Images\back.jpg" />
     <Content Include="Images\banner_1.jpg" />
     <Content Include="Images\Food-HD-Desktop.jpg" />
@@ -149,12 +149,12 @@
     <Compile Include="AddRecipes.aspx.designer.cs">
       <DependentUpon>AddRecipes.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Home.aspx.cs">
-      <DependentUpon>Home.aspx</DependentUpon>
+    <Compile Include="Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Home.aspx.designer.cs">
-      <DependentUpon>Home.aspx</DependentUpon>
+    <Compile Include="Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
     </Compile>
     <Compile Include="MasterPage.Master.cs">
       <DependentUpon>MasterPage.Master</DependentUpon>

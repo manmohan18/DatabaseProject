@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <siteMap xmlns="http://schemas.microsoft.com/AspNet/SiteMap-File-1.0" >
   <siteMapNode url="~/" title="Root" description="Root">
-    <siteMapNode url="~/Home.aspx" title="Home"
+    <siteMapNode url="~/Default.aspx" title="Home"
         description="Recipe Book Home" />
     <siteMapNode url="~/Recipes.aspx" title="View Recipies"
         description="Recipe View Page" />
