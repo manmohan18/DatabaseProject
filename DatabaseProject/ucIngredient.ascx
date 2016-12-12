@@ -6,4 +6,6 @@
     <asp:ListItem>Grams</asp:ListItem>
     <asp:ListItem>Ounce</asp:ListItem>
     <asp:ListItem>Litres</asp:ListItem>
+    <asp:ListItem>Tbsp</asp:ListItem>
+    <asp:ListItem>Pcs</asp:ListItem>
 </asp:DropDownList>
