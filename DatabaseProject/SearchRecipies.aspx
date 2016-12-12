@@ -20,8 +20,11 @@
     <p>
         <br /><br />
 
-        <asp:GridView ID="searchGrid" runat="server" CellPadding="4" ForeColor="#333333" GridLines="None"  style="margin-top: 91px">
+        <asp:GridView ID="searchGrid" runat="server" CellPadding="4" ForeColor="#333333" GridLines="None"  style="margin-top: 91px" AutoGenerateColumns="False">
             <AlternatingRowStyle BackColor="White" />
+            <Columns>
+                <asp:BoundField DataField="recipe_name" HeaderText="Recipe Name" />
+            </Columns>
             <FooterStyle BackColor="#990000" Font-Bold="True" ForeColor="White" />
             <HeaderStyle BackColor="#990000" Font-Bold="True" ForeColor="White" />
             <PagerStyle BackColor="#FFCC66" ForeColor="#333333" HorizontalAlign="Center" />
